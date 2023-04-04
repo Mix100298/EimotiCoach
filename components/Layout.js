@@ -6,7 +6,7 @@ const Layout = () => {
       <div className='h-screen flex flex-row justify-start'>
         <Sidebar />
         <div>
-          </div>
+        </div>
       </div>
     )
   }

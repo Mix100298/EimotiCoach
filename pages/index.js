@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Sidebar from 'components/Sidebar';
 import { Box } from '@chakra-ui/react'
@@ -6,11 +5,13 @@ import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <div className='flex gap-6'>
+    <div className='flex'>
       <Sidebar />
-      <div>
-        Hi this is EimotiCoach
-        </div>
+      
+        <Box bg='gray' w='100%' p={4} color='white' h='500px'>
+          This is the Box
+        </Box>
+      
     </div>
   )
 }
