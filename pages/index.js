@@ -1,19 +1,18 @@
 import React from 'react';
 import Sidebar from 'components/Sidebar';
-import { Box } from '@chakra-ui/react'
+import Layout from 'components/Layout';
+import { Box } from '@chakra-ui/react';
+import { HiMenuAlt1 } from 'react-icons/hi';
 
-
-const Home = () => {
+const index = () => {
   return (
-    <div className='flex'>
-      <Sidebar />
-      
-        <Box bg='gray' w='100%' p={4} color='white' h='500px'>
+    <Layout >
+        <Box bg='tomato' w='100%' p={4} color='white' h='1500px'>
           This is the Box
         </Box>
-      
-    </div>
+
+    </Layout>
   )
 }
 
-export default Home;
+export default index;

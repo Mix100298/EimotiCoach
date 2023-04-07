@@ -1,14 +1,15 @@
-import React from 'react';
-import Sidebar from 'components/Sidebar';
+import React from "react";
+import Sidebar from "./Sidebar";
 
-const Layout = () => {
-    return (
-      <div className='h-screen flex flex-row justify-start'>
-        <Sidebar />
-        <div>
-        </div>
+const Layout = ({ children }) => {
+  return (
+    <section className="flex">
+      <Sidebar/>
+      <div>
+          {children}
       </div>
-    )
-  }
+    </section>
+  );
+};
 
-  export default Layout;
+export default Layout;

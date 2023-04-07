@@ -24,30 +24,27 @@ const Sidebar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
             <div className={`bg-[#000000] min-h-screen text-white px-4 ${open ? 'w-20' : 'w-72'} duration-700`} >
-                <div className='py-3 flex justify-end'>
+                <div className='py-3 flex justify-end '>
                     <HiMenuAlt1 className={`cursor-pointer hover:bg-[#333333] rounded-md ${open ? ' ' : 'rotate-180'}`}
                         onClick={() => setOpen(!open)}
                         size={38}
                     />
                 </div>
-                <div className='mt-4 flex flex-col gap-4' >
+                <div className='mt-4 flex flex-col gap-4 ' >
                     {menuItems.map(({ id: Icon, ...menu }) => {
                         return (
                             <Link href={menu.link} className={`${menu.matgin && 'mt-5'} flex items-center text-lg gap-4 font-medium p-2 hover:bg-[#12314e] rounded-md ml-2`} >
-                                <div className='text-2xl'>{menu.icon}</div>                              
-                                    <h2 className={`${open ? ' ' : 'transition delay-500 '} ml-5 text-xl whitespace-pre duration-700 
-                               ${open && 'opacity-0 translate-x-20 overflow-hidden transition duration-300'}`}
-                                    >
-                                        {menu.label}</h2>                            
+                                <div className='text-2xl'>{menu.icon}</div>
+                                <h2 className={`${open ? ' ' : 'transition delay-500 '} ml-5 text-xl whitespace-pre duration-700 
+                               ${open && 'opacity-0 translate-x-8 overflow-hidden transition duration-300'}`}
+                                >
+                                    {menu.label}</h2>
                             </Link>)
                     })}
                 </div>
             </div>
-        </div>
     )
-
 }
 
 export default Sidebar;
