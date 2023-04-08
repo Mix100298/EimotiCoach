@@ -10,13 +10,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.side-bar{
-
-}
-
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.sidebar .content-wrapper div {
+  width:200px;
+  height:250px;
+  position: fixed;
+
 }
 
 * {
