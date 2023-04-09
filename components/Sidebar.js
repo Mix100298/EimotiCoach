@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { AiFillHome } from 'react-icons/ai';
 import { BiHappyBeaming, BiMeh, BiSad, BiTired } from 'react-icons/bi';
 import { HiMenuAlt1, HiOutlineMusicNote } from 'react-icons/hi';
@@ -13,14 +12,14 @@ const Sidebar = () => {
 
     const menuItems = [
         { id: 1, label: 'Home', icon: <AiFillHome color='#FFFFFF'/>, link: '/'},
-        { id: 2, label: 'Radical', icon: <BiHappyBeaming color='#99FF66'/>, link: '/', matgin: true },
-        { id: 3, label: 'Bored', icon: <BiMeh color='#FFFF00'/>, link: '/' },
-        { id: 4, label: 'Bad', icon: <BiSad color='#FFA500'/>, link: '/' },
-        { id: 5, label: 'Sad', icon: <BiTired color='#FF4500'/>, link: '/' },
-        { id: 6, label: 'Movie', icon: <RiMovieLine color='#FF4500'/>, link: '/', matgin: true },
-        { id: 7, label: 'Music', icon: <HiOutlineMusicNote color='#FFA500' />, link: '/' },
-        { id: 8, label: 'Book', icon: <GoBook color='#1E90FF'/>, link: '/' },
-        { id: 9, label: 'Activity', icon: <MdOutlineLocalActivity color='#FFFF00'/>, link: '/' },
+        { id: 2, label: 'Excellent', icon: <BiHappyBeaming color='#99FF66'/>, link: '/Excellent/Excellent', matgin: true },
+        { id: 3, label: 'Bored', icon: <BiMeh color='#FFFF00'/>, link: '/Bored/Bored' },
+        { id: 4, label: 'Bad', icon: <BiSad color='#FFA500'/>, link: '/Bad/Bad' },
+        { id: 5, label: 'Sad', icon: <BiTired color='#FF4500'/>, link: '/Sad/Sad' },
+        { id: 6, label: 'Movie', icon: <RiMovieLine color='#FF4500'/>, link: '/Movie/Movie', matgin: true },
+        { id: 7, label: 'Music', icon: <HiOutlineMusicNote color='#FFA500' />, link: '/Music/Music' },
+        { id: 8, label: 'Book', icon: <GoBook color='#1E90FF'/>, link: '/Book/Book' },
+        { id: 9, label: 'Activity', icon: <MdOutlineLocalActivity color='#FFFF00'/>, link: '/Activity/Activity' },
         { id: 10, label: 'EimoitCoach', icon: <GoBook />, link: '/', matgin: true },
     ];
 
@@ -42,7 +41,7 @@ const Sidebar = () => {
                             hover:bg-[#12314e] rounded-md ml-2`} >
                                 <div>{menu.icon}</div>
                                 <h2 className={`${open ? ' ' : 'transition delay-500 '} ml-5 text-xl whitespace-pre duration-700 
-                               ${open && 'opacity-0 translate-x-8 overflow-hidden transition duration-1000'}`}
+                               ${open && 'opacity-0 translate-x-8 overflow-hidden transition duration-500'}`}
                                 >
                                     {menu.label}</h2>
                             </Link>)
