@@ -34,10 +34,10 @@ const Sidebar = () => {
                         size={40}
                     />
                 </div>
-                <div className='mt-2 flex flex-col gap-4 px-3' >
+                <div className='mt-1 flex flex-col gap-4 px-3' >
                     {menuItems.map(({ id: Icon, ...menu }) => {
                         return (
-                            <Link href={menu.link} className={`${menu.matgin && 'mt-4'} flex items-center text-3xl gap-4 font-medium p-2 
+                            <Link href={menu.link} className={`${menu.matgin && 'mt-2'} flex items-center text-3xl gap-4 font-medium p-2 
                             hover:bg-[#12314e] rounded-md ml-2`} >
                                 <div>{menu.icon}</div>
                                 <h2 className={`${open ? ' ' : 'transition delay-500 '} ml-5 text-xl whitespace-pre duration-700 
